@@ -25,8 +25,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "dqwdqwdqdqwdqw"
 
   spec.homepage     = "http://open.qq.com/"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -39,7 +38,10 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      =  { :type => 'LGPL', :text => <<-LICENSE
+                        ® 1998 - 2018 Tencent All Rights Reserved.
+                        LICENSE
+                      }
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -118,7 +120,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.ios.vendored_frameworks = 'sdk/*.framework'
-  spec.framework  = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony'
+  spec.framework  = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony', 'WebKit'
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
